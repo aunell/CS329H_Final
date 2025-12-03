@@ -16,6 +16,7 @@ import arviz as az
 
 import warnings
 warnings.filterwarnings('ignore')
+df = pd.read_csv("CS32h/sample_data.csv")
 
 class BayesianIRT:
         """
