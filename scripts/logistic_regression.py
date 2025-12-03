@@ -11,6 +11,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 
+df = pd.read_csv("CS32h/sample_data.csv")
 df_model = df.dropna(subset=['isPositive']).copy()
 df_model['isPositive'] = df_model['isPositive'].astype(int)
 df_model['combined_text'] = df_model['user_query'].fillna('') + ' ' + df_model['chatehr_response'].fillna('')
